@@ -129,8 +129,7 @@ for idx, company in df_companies.iterrows():
             'day_of_week': price_row['observation_date'].strftime('%A'),
             'is_tech_sector': 1 if sector == 'Technology' else 0,
             'is_financial_sector': 1 if sector == 'Financials' else 0,
-            'is_consumer_sector': 1 if sector == 'Consumer' else 0,
-            'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            'is_consumer_sector': 1 if sector == 'Consumer' else 0
         }
 
         all_records.append(record)
